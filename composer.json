@@ -9,11 +9,9 @@
     ],
     "minimum-stability": "dev",
     "require": {},
-    "extra": {
-        "laravel": {
-            "providers": [
-                "sunscreem\\laravelflickrgallery\\LaravelFlickrGalleryServiceProvider"
-            ]
+    "autoload": {
+        "psr-4": {
+            "sunscreem\\LaravelFlickrPackage\\": "src"
         }
     }
 }
