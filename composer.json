@@ -1,5 +1,5 @@
 {
-    "name": "sunscreem/laravelflickrgallery",
+    "name": "sunscreem/laravel-flickr-gallery",
     "description": "Simple way to connect a flickr album to your website",
     "authors": [
         {
@@ -11,7 +11,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Sunscreem\\LaravelFlickrPackage\\": "src/"
+            "Sunscreem\\LaravelFlickrGallery\\": "src"
         }
     }
 }
