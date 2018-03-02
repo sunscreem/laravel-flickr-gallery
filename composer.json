@@ -1,0 +1,11 @@
+{
+    "name": "sunscreem/laravel-flickr-gallery",
+    "authors": [
+        {
+            "name": "Rob Cooper",
+            "email": "sunscreem@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
