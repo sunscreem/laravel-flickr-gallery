@@ -11,7 +11,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "sunscreem\\laravel-flickr-gallery\\LaravelFlickrGalleryServiceProvider"
+                "sunscreem\\laravelflickrgallery\\LaravelFlickrGalleryServiceProvider"
             ]
         }
     }

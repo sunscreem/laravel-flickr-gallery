@@ -4,7 +4,7 @@ namespace sunscreem\laravelflickrgallery;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelFlickrGalleryProvider extends ServiceProvider
+class LaravelFlickrGalleryServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
