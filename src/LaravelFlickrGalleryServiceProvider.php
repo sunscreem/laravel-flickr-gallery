@@ -1,6 +1,6 @@
 <?php
 
-namespace sunscreem\laravelflickrgallery;
+namespace Sunscreem\LaravelFlickrGallery;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,6 +13,7 @@ class LaravelFlickrGalleryProvider extends ServiceProvider
      */
     public function boot()
     {
+        dd('test');
     }
 
     /**
