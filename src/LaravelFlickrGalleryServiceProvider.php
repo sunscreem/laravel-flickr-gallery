@@ -2,6 +2,7 @@
 
 namespace Sunscreem\LaravelFlickrGallery;
 
+use Sunscreem\LaravelFlickrGallery\Commands\PullFromFlickr;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelFlickrGalleryServiceProvider extends ServiceProvider
@@ -13,7 +14,13 @@ class LaravelFlickrGalleryServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                PullFromFlickr::class,
+            ]);
+        }
     }
 
     /**a
