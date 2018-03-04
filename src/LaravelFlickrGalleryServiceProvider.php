@@ -13,7 +13,7 @@ class LaravelFlickrGalleryServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        dd('Im working fine locally but try me on the vm and I fail');
+        dd('Hey - Im working fine locally but try me on the vm and I fail');
     }
 
     /**a
