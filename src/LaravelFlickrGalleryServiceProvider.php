@@ -21,6 +21,10 @@ class LaravelFlickrGalleryServiceProvider extends ServiceProvider
                 PullFromFlickr::class,
             ]);
         }
+
+        $this->publishes([
+            __DIR__ . '/config/flickr.php' => config_path('flickr.php'),
+        ]);
     }
 
     /**a

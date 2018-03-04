@@ -4,9 +4,9 @@ namespace Sunscreem\LaravelFlickrGallery\Commands;
 
 use Flickr;
 use Carbon\Carbon;
-use App\FlickrPhoto;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Cache;
+use Sunscreem\LaravelFlickrGallery\FlickrPhoto;
+use Sunscreem\LaravelFlickrGallery\Exceptions\InvalidConfiguration;
 
 class PullFromFlickr extends Command
 {
@@ -41,7 +41,12 @@ class PullFromFlickr extends Command
      */
     public function handle()
     {
-        $this->line('Started fetching data from Flickr');
+        if (!config('flickr.userIdToFetch')) {
+            throw InvalidConfiguration::create('Eek! No user ID supplied. Did you publish the config file?');
+            return 1;
+        }
+
+        $this->line('Started fetching data from Flickr.');
 
         $data = $this->fetchFlickrData();
     }
@@ -50,7 +55,7 @@ class PullFromFlickr extends Command
     {
         $flickrRequest = Flickr::request(
             'flickr.people.getPublicPhotos',
-            ['user_id' => config('site.flickrUserId')]
+            ['user_id' => config('flickr.userIdToFetch')]
         );
 
         $photos = collect($flickrRequest->photos['photo']);
