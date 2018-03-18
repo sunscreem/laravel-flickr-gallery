@@ -1,5 +1,9 @@
 # Add a Flickr album to your website
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-sitemap.svg?style=flat-square)](https://packagist.org/packages/sunscreem/laravel-flickr-gallery)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-sitemap.svg?style=flat-square)](https://packagist.org/packages/sunscreem/laravel-flickr-gallery)
+
 **NOTE: This is a brand new package - these instruction have not yet been tested**
 
 Flickr has some great tools for uploading, storing and editing your photos. This package uses the flickr API to bring those photo to your own website.
@@ -11,7 +15,7 @@ It includes an optional lightbox/swipeable photo gallery.
 First, install the package via composer:
 
 ```bash
-composer require sunscreem/laravel-flickr-galler
+composer require sunscreem/laravel-flickr-gallery
 ```
 
 The package will automatically register itself.
