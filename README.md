@@ -1,4 +1,6 @@
-# Add a Flickr collection to your website
+# Add a Flickr album to your website
+
+**NOTE: This is a brand new package - these instruction have not yet been tested**
 
 Flickr has some great tools for uploading, storing and editing your photos. This package uses the flickr API to bring those photo to your own website.
 
