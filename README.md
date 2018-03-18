@@ -1,8 +1,8 @@
 # Add a Flickr album to your website
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-sitemap.svg?style=flat-square)](https://packagist.org/packages/sunscreem/laravel-flickr-gallery)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/sunscreem/laravel-flickr-gallery.svg?style=flat-square)](https://packagist.org/packages/sunscreem/laravel-flickr-gallery)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-sitemap.svg?style=flat-square)](https://packagist.org/packages/sunscreem/laravel-flickr-gallery)
+[![Total Downloads](https://img.shields.io/packagist/dt/sunscreem/laravel-flickr-gallery.svg?style=flat-square)](https://packagist.org/packages/sunscreem/laravel-flickr-gallery)
 
 **NOTE: This is a brand new package - these instruction have not yet been tested**
 
