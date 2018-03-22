@@ -4,8 +4,6 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Total Downloads](https://img.shields.io/packagist/dt/sunscreem/laravel-flickr-gallery.svg?style=flat-square)](https://packagist.org/packages/sunscreem/laravel-flickr-gallery)
 
-**NOTE: This is a brand new package - these instruction have not yet been tested**
-
 Flickr has some great tools for uploading, storing and editing your photos. This package uses the flickr API to bring those photo to your own website.
 
 It includes an optional lightbox/swipeable photo gallery.
