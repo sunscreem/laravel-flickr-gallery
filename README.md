@@ -10,6 +10,8 @@ Flickr has some great tools for uploading, storing and editing your photos. This
 
 It includes an optional lightbox/swipeable photo gallery.
 
+This package has only been tested on Laravel >= 5.5
+
 ## Installation
 
 First, install the package via composer:
@@ -44,7 +46,9 @@ php artisan migrate
 
 Set your flickr user id, key and secret in your .env file.
 
-Instructions on how to find these are here. [TBC]
+Here's a guide on [finding your Flickr ID](https://www.pixsy.com/academy/flickr-id/).
+
+And here's how to generate your [API key and secret](https://www.flickr.com/services/api/misc.api_keys.html).
 
 ```php 
 FLICKR_USER_ID_TO_FETCH=1234567890@N00
@@ -54,7 +58,7 @@ FLICKR_SECRET=[your-flickr-secret]
 
 ## Usage
 
-Using `php artisan` you can pull in the latest photos from Flickr:
+Using `php artisan` you can pull in the latest photos from Flickr. You can, of course, [schedule this](https://laravel.com/docs/5.6/scheduling) to run in the background:
 
 ```bash
 php artisan flickr:pull
