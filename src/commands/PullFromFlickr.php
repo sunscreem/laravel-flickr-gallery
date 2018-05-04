@@ -60,6 +60,11 @@ class PullFromFlickr extends Command
 
         $photos = collect($flickrRequest->photos['photo']);
 
+        // do we need to clear out the existing photos from DB?
+        if (config('flickr.refreshEveryFetch') && $photos->count()) {
+            FlickrPhoto::truncate();
+        }
+
         $countOfPhotosAdded =
             $photos->reject(function ($photo) {
                 return FlickrPhoto::where(['flickr_id' => $photo['id']])->count();
